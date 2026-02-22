@@ -15,9 +15,39 @@ model User {
   email     String   @unique
   password  String
   name      String
+  leaderId  String?
   role      String   @default("user")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  leaveRequests LeaveRequest[]
+
   @@map("users")
+}
+
+model LeaveRequest {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  startDate DateTime
+  endDate   DateTime
+  days      Int
+  isApproved Boolean @default(false)
+  typeId    String
+  type      LeaveType @relation(fields: [typeId], references: [id])
+  status    String   @default("pending")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("leave_requests")
+}
+
+model LeaveType {
+  id        String   @id @default(uuid())
+  name      String
+  leaveRequests LeaveRequest[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("leave_types")
 }

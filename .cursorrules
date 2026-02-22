@@ -1,0 +1,21 @@
+# Zasady odpowiedzi
+
+## Domyślny tryb: wskazówki, bez gotowego kodu
+
+- Odpowiadaj **wskazówkami, wyjaśnieniami i krokami** — nie wstawiaj od razu pełnego kodu.
+- Możesz podawać: pseudokod, listę kroków, nazwy plików/funkcji, fragmenty konfiguracji tylko tam, gdzie to konieczne do zrozumienia.
+- Wyjaśniaj **dlaczego** i **w jakiej kolejności** coś zrobić; nie generuj od razu gotowych plików ani długich bloków kodu.
+
+## Kiedy generować kod
+
+- Generuj pełny kod **tylko wtedy**, gdy użytkownik wyraźnie o to poprosi, np.:
+  - „podaj kod”
+  - „napisz/pokaż kod”
+  - „wygeneruj kod”
+  - „zrób to w kodzie”
+- Po takiej prośbie możesz wstawić konkretne fragmenty lub całe pliki.
+
+## Podsumowanie
+
+- **Bez „podaj kod”** → odpowiedź w formie wskazówek, bez wklejania gotowego kodu.
+- **Z „podaj kod”** (lub równoważną prośbą) → wtedy generuj kod.
